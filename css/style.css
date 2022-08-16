@@ -1,0 +1,259 @@
+body {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+p {
+    margin: 0;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.container {
+    padding: 1rem;
+}
+
+header {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    max-height: 10rem;
+    border-radius: 50%;
+    width: auto;
+}
+
+header ul {
+    margin: 1rem 0 0;
+    list-style: none;
+    padding: 0;
+}
+
+header ul a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0 0 1rem;
+    background: #444;
+}
+
+header ul a:hover {
+    background-color: #222;
+}
+
+.masthead {
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/money.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dynamic {
+    margin: 2rem auto;
+}
+
+article {
+    padding: 2rem 0;
+    border-bottom: 1px solid #444;
+}
+
+article img {
+    max-width: 400px;
+    max-height: 375px;
+}
+
+article cite {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+article:last-child {
+    border: 0;
+}
+
+.projects {
+    padding: 0;
+    margin: 1rem 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    color: #fff;
+}
+
+.projects li {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 0.25rem;
+    background-color: rgba(68, 68, 68, 0.8);
+}
+
+.projects img {
+    border-radius: 0.25rem;
+    margin: 0 0 1rem;
+}
+
+.projects h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+}
+
+footer ul {
+    margin: 2rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2em;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (min-width: 48rem) {
+    body {
+        font-size: 1rem;
+    }
+
+    .container {
+        max-width: 60rem;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header ul a {
+        margin: 0 1rem;
+        min-width: 10rem;
+    }
+
+    article figure {
+        width: 40%;
+        max-height: 400px;
+        float: left;
+    }
+
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects img {
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+@media (min-width: 80rem) {
+    body {
+        text-align: left;
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 3rem;
+        max-width: 80rem;
+    }
+
+    header .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 3rem;
+    }
+
+    header ul a {
+        text-align: center;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+    
+    article h3 {
+        grid-column: 1/3;
+    }
+
+    article figure {
+        margin: 0;
+        width: auto;
+    }
+    
+    article figcaption {
+        max-width: 400px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer p {
+        text-align: right;
+    }
+}
